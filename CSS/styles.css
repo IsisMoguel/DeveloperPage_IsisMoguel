@@ -1,17 +1,55 @@
+:root {
+    --blanco: #FFFFFF;
+    --oscuro: #330222;
+    --rosado: #FF008C;
+    --primario: #FFD900;
+    --secundario: #00E8C9;
+    --gris: #9C8693;
+}
+
 /* Truco para uniformidad de texto entre navegadores */
-html{
+html {
     font-size: 62.5%;
 }
 
-body{
+body {
     font-size: 16px;
 }
 
-.titulo-01{
+.titulo-01 {
     text-align: center;
     font-size: 3.8rem;
 }
 
-.titulo-01 span{
+.titulo-01 span {
     font-size: 2rem;
+}
+
+.navegacion-principal {
+    background-color: var(--secundario);
+    /* Margin es por fuera y padding es por dentro */
+    display: flex; /* Flexbox es para alinear elementos */
+    justify-content: space-between;
+    font-weight: bold; /* En negritas */
+    font-size: 2rem;
+}
+
+.navegacion-principal a:hover {
+    background-color: var(--primario);
+    color: var(--oscuro);
+}
+
+.navegacion-principal a {
+    color: var(--blanco);
+    text-decoration: none; /* Remueve el subrrayado */
+    padding: 1rem;
+}
+
+.contenedor {
+    width: 120rem;
+    margin: 0 auto;
+}
+
+.nav-bg {
+    background-color: var(--secundario);
 }

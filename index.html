@@ -8,8 +8,12 @@
     <!-- Codificacion que permite representar diferentes tipos de caracteres -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Primero se pone normalize -->
-     <link rel="preload" href="CSS/normalize.css">
-     <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="preload" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <!-- Importacion de google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
      <!-- Nuestro CSS -->
     <link rel="preload" href="CSS/styles.css" as="style">
     <link rel="stylesheet" href="CSS/styles.css">
@@ -20,12 +24,14 @@
     <header>
       <h1 class="titulo-01">Isis Moguel <span>Developer</span></h1>
     </header>
-    <nav>
+    <div class="nav-bg">
+    <nav class="navegacion-principal contenedor">
       <a href="#">Inicio</a>
-      <a href="#">Sobre mi</a>
+      <a href="#">Sobre mí</a>
       <a href="#">Clientes</a>
       <a href="#">Contacto</a>
     </nav>
+    </div>
     <section>
       <h2>Desarrollador Full Stack</h2>
       <p>Mérida, Yucatán</p>
