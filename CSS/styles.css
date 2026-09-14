@@ -1,5 +1,5 @@
 :root {
-    --blanco: #FFFFFF;
+    --blanco: #FFE8F7;
     --oscuro: #330222;
     --rosado: #FF008C;
     --primario: #FFD900;
@@ -16,6 +16,22 @@ body {
     font-size: 16px;
 }
 
+h1 {
+    font-family: 3.8rem;
+}
+
+h2 {
+    font-family: 2.8rem;
+}
+
+h3 {
+    font-family: 1.8rem;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
 .titulo-01 {
     text-align: center;
     font-size: 3.8rem;
@@ -29,9 +45,16 @@ body {
     background-color: var(--secundario);
     /* Margin es por fuera y padding es por dentro */
     display: flex; /* Flexbox es para alinear elementos */
+    flex-direction: column;
     justify-content: space-between;
     font-weight: bold; /* En negritas */
     font-size: 2rem;
+    align-items: center;
+}
+@media (min-width: 780px) {
+    .navegacion-principal {
+        display: row;
+    }
 }
 
 .navegacion-principal a:hover {
@@ -52,4 +75,27 @@ body {
 
 .nav-bg {
     background-color: var(--secundario);
+}
+
+.hero {
+    background-image: url(../img/catthinking.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    position: relative;
+}
+
+.contenido-hero {
+    position: absolute;
+    background-color: ;
+}
+
+.contenido-hero p,
+.contenido-hero h2 {
+    color: var(--blanco);
+}
+
+.ubicacion {
+    display: flex;
+    align-items: flex-end;
 }
